@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mmrx.gymstopwatch.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fl_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mmrx.gymstopwatch.stopwatch.StopwatchCircleView
+            android:id="@+id/stopwatch_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.mmrx.gymstopwatch.stopwatch.StopwatchCircleView>
+
+        <com.mmrx.gymstopwatch.timer.CountingTimerView
+            android:id="@+id/stopwatch_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_watch" />
+
+        </com.mmrx.gymstopwatch.timer.CountingTimerView>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="RESET"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#d7cfcf"
+        android:layout_alignParentBottom="true"
+        android:onClick="doReset"
+        android:background="@drawable/bg_reset_bn"/>
+
+</RelativeLayout>

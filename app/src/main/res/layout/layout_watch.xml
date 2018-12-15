@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="40dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/dateTime_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/timeColor"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="2018年12月15日16:30:24"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true">
+
+        <!--<TextView-->
+            <!--android:id="@+id/minute_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:text="99"-->
+            <!--android:gravity="center_horizontal|bottom"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textSize="250dp"-->
+            <!--android:maxLength="2"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/timeColor"/>-->
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/minute_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/timeColor"
+            android:textStyle="bold"
+            tools:text="99"
+            android:gravity="center_horizontal|bottom"
+            android:layout_alignParentTop="true"
+            android:textSize="250dp"/>
+
+        <TextView
+            android:id="@+id/second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minute_tv"
+            tools:text="00"
+            android:gravity="top|center_horizontal"
+            android:textSize="200dp"
+            android:maxLength="2"
+            android:textStyle="bold"
+            android:textColor="@color/timeColor"/>
+
+        <TextView
+            android:id="@+id/dot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/second_tv"
+            android:layout_alignBaseline="@id/second_tv"
+            android:text="."
+            android:gravity="center"
+            android:textSize="100dp"
+            android:maxLength="3"
+            android:textStyle="bold"
+            android:textColor="@color/timeColor"/>
+
+        <TextView
+            android:id="@+id/million_second_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dot_tv"
+            android:layout_alignBaseline="@id/second_tv"
+            tools:text="99"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:maxLength="3"
+            android:textStyle="bold"
+            android:textColor="@color/timeColor"/>
+
+    </RelativeLayout>
+</RelativeLayout>
