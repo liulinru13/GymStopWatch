@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mmrx.gymstopwatch.data;
+package com.mmrx.gymstopwatch.data.stopwatch;
 
 /**
  * Data that must be coordinated across all notifications is accessed via this model.

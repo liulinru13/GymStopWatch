@@ -1,4 +1,4 @@
-package com.mmrx.gymstopwatch.data;
+package com.mmrx.gymstopwatch.data.stopwatch;
 
 
 import android.content.Context;
@@ -23,7 +23,6 @@ public class DataModel {
     public void setContext(Context context) {
         this.mContext = context;
         mStopwatchModel = new StopwatchModel(mContext, null);
-
     }
 
     public static DataModel getDataModel() {

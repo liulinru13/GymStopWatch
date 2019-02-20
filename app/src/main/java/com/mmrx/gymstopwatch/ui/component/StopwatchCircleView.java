@@ -1,4 +1,4 @@
-package com.mmrx.gymstopwatch.stopwatch;
+package com.mmrx.gymstopwatch.ui.component;
 
 
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.mmrx.gymstopwatch.data.DataModel;
-import com.mmrx.gymstopwatch.data.Stopwatch;
+import com.mmrx.gymstopwatch.data.stopwatch.DataModel;
+import com.mmrx.gymstopwatch.data.stopwatch.Stopwatch;
 
 public class StopwatchCircleView extends View {
 

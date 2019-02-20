@@ -2,18 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mmrx.gymstopwatch.MainActivity" >
+    tools:context="com.mmrx.gymstopwatch.ui.MainActivity" >
 
     <FrameLayout
         android:id="@+id/fl_stopwatch"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.mmrx.gymstopwatch.stopwatch.StopwatchCircleView
+        <com.mmrx.gymstopwatch.ui.component.StopwatchCircleView
             android:id="@+id/stopwatch_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-        </com.mmrx.gymstopwatch.stopwatch.StopwatchCircleView>
+        </com.mmrx.gymstopwatch.ui.component.StopwatchCircleView>
 
         <com.mmrx.gymstopwatch.timer.CountingTimerView
             android:id="@+id/stopwatch_time_text"

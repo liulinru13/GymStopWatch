@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mmrx.gymstopwatch.data;
+package com.mmrx.gymstopwatch.data.stopwatch;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.mmrx.gymstopwatch.data.Stopwatch.State.RESET;
+import static com.mmrx.gymstopwatch.data.stopwatch.Stopwatch.State.RESET;
 
 
 /**

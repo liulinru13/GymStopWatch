@@ -1,4 +1,4 @@
-package com.mmrx.gymstopwatch;
+package com.mmrx.gymstopwatch.listener;
 
 import android.view.MotionEvent;
 import android.view.View;

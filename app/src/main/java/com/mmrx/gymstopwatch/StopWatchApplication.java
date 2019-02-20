@@ -2,7 +2,7 @@ package com.mmrx.gymstopwatch;
 
 import android.app.Application;
 
-import com.mmrx.gymstopwatch.data.DataModel;
+import com.mmrx.gymstopwatch.data.stopwatch.DataModel;
 
 public class StopWatchApplication extends Application {
 

@@ -1,4 +1,4 @@
-package com.mmrx.gymstopwatch;
+package com.mmrx.gymstopwatch.ui;
 
 import android.os.PowerManager;
 import android.os.SystemClock;
@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.mmrx.gymstopwatch.data.DataModel;
-import com.mmrx.gymstopwatch.data.Stopwatch;
-import com.mmrx.gymstopwatch.stopwatch.StopwatchCircleView;
+import com.mmrx.gymstopwatch.listener.OnDoubleClickListener;
+import com.mmrx.gymstopwatch.R;
+import com.mmrx.gymstopwatch.data.stopwatch.DataModel;
+import com.mmrx.gymstopwatch.data.stopwatch.Stopwatch;
+import com.mmrx.gymstopwatch.ui.component.StopwatchCircleView;
 import com.mmrx.gymstopwatch.timer.CountingTimerView;
 
 import static android.os.PowerManager.ON_AFTER_RELEASE;

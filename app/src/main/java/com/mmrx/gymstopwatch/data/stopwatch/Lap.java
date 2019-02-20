@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mmrx.gymstopwatch.data;
+package com.mmrx.gymstopwatch.data.stopwatch;
 
 /**
  * A read-only domain object representing a stopwatch lap.
